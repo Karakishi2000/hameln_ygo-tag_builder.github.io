@@ -1,13 +1,15 @@
 /* 基本スタイル（スマホ向け） */
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 20px;
   line-height: 170%;
 }
  
 /* タブレット向け（768px以上） */
 @media screen and (min-width: 768px) {
   .container {
+    flex-direction: row;
     width: 750px;
   }
 }
@@ -16,20 +18,25 @@
 @media screen and (min-width: 1025px) {
   .container {
     width: 1000px;
-    line-height: 200%;
   }
-}
-
-p{
-  margin: 0 0;
-  padding: 0px;
 }
 
 div{
   box-sizing: border-box;
 }
 
-.zone_container{
+.preview_pane {
+  width: 100%;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px){
+  .preview_pane {
+    width: 20em;
+  }
+}
+
+.zone_container {
   display: inline-block;
   width: 4em;
   height: 4em;
@@ -51,4 +58,9 @@ div{
   position: absolute;
   top: 50%;
   transform: translateY(-50%)
+}
+
+.setting_pane {
+  background-color: light-gray;
+  border: 1px solid black;
 }
