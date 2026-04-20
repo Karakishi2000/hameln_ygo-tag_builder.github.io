@@ -5,6 +5,13 @@
   width: 100%;
   line-height: 170%;
 }
+
+@media screen and (orientation: landscape){
+  .container {
+    flex-direction: row;
+  }
+}
+ 
  
 /* タブレット向け（768px以上） */
 @media screen and (min-width: 768px) {
@@ -58,5 +65,5 @@ div{
 .setting_pane {
   background-color: light-gray;
   border: 1px solid black;
-  flex: 1 0 20em;
+  flex: 1 0 100%;
 }
