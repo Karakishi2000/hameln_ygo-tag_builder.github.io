@@ -32,12 +32,10 @@ div{
 }
 
 .zone_default {
-  display: flex;
   width: 69%;
   height: 4em;
   margin: 0 auto;
   border: 1px solid #999;
-  justify-content: center;
 }
 
 .zone_defense {
