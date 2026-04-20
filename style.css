@@ -22,7 +22,7 @@
 
 div{
   box-sizing: border-box;
-  margin: 0 0;
+  margin: 0 auto;
 }
 
 .zone_container{
