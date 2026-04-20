@@ -1,8 +1,8 @@
 /* 基本スタイル（スマホ向け） */
 .container {
   width: 100%;
-  padding: 15px;
-  line-height: 1.7;
+  padding: 1em;
+  line-height: 170%;
 }
  
 /* タブレット向け（768px以上） */
@@ -16,6 +16,7 @@
 @media screen and (min-width: 1025px) {
   .container {
     width: 1000px;
+    line-height: 200%;
   }
 }
 
