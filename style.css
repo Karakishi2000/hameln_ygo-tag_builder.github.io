@@ -2,14 +2,13 @@
 .container {
   width: 100%;
   padding: 15px;
-  margin: 0px;
+  line-height: 1.7;
 }
  
 /* タブレット向け（768px以上） */
 @media screen and (min-width: 768px) {
   .container {
     width: 750px;
-    margin: 0 auto;
   }
 }
  
@@ -22,6 +21,7 @@
 
 div{
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .zone_container{
@@ -37,8 +37,6 @@ div{
   width: 69%;
   height: 4em;
   border: 1px solid #999;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .zone_defense {
