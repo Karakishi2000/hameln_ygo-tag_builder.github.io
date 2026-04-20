@@ -1,6 +1,7 @@
 .zone_container{
   width: 4em;
   height: 4em;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,10 +11,15 @@
   width: 69%;
   height: 4em;
   border: 1px solid #999;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .zone_defense {
   width: 4em;
   height: 69%;
   border: 1px solid #88F;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
 }
