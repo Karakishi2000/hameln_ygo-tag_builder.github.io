@@ -29,8 +29,6 @@ div{
   width: 4em;
   height: 4em;
   position: relative;
-  text-align: center;
-  vertical-align: baseline;
 }
 
 .zone_default {
@@ -39,6 +37,8 @@ div{
   height: 4em;
   margin: 0 auto;
   border: 1px solid #999;
+  text-align: center;
+  vertical-align: baseline;
 }
 
 .zone_defense {
