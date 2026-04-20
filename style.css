@@ -28,13 +28,7 @@ div{
 .preview_pane {
   width: 100%;
   padding: 20px;
-  flex: 1 0 0%;
-}
-
-@media screen and (min-width: 768px){
-  .preview_pane {
-    width: 20em;
-  }
+  flex: 1 0 20em;
 }
 
 .zone_container {
@@ -64,5 +58,5 @@ div{
 .setting_pane {
   background-color: light-gray;
   border: 1px solid black;
-  flex: 1 0 auto;
+  flex: 1 0 20em;
 }
