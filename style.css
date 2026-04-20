@@ -21,6 +21,7 @@
 }
 
 .zone_container{
+  box-sizing: border-box;
   width: 4em;
   height: 4em;
   position: relative;
