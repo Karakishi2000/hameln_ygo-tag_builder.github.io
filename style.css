@@ -2,7 +2,7 @@
 .container {
   width: 100%;
   padding: 15px;
-  line-height: 1.7;
+  margin: 0px;
 }
  
 /* タブレット向け（768px以上） */
