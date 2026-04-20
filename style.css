@@ -22,19 +22,20 @@
 
 div{
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 0;
 }
 
 .zone_container{
+  display: inline-block;
   width: 4em;
   height: 4em;
   position: relative;
-  display: inline-block;
   text-align: center;
   justify-content: center;
 }
 
 .zone_default {
+  display: inline-block;
   width: 69%;
   height: 4em;
   border: 1px solid #999;
