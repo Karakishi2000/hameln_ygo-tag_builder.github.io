@@ -20,8 +20,11 @@
   }
 }
 
-.zone_container{
+div{
   box-sizing: border-box;
+}
+
+.zone_container{
   width: 4em;
   height: 4em;
   position: relative;
