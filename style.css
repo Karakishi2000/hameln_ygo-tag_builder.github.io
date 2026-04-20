@@ -1,3 +1,24 @@
+/* 基本スタイル（スマホ向け） */
+.container {
+  width: 100%;
+  padding: 15px;
+}
+ 
+/* タブレット向け（768px以上） */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+ 
+/* PC向け（1025px以上） */
+@media screen and (min-width: 1025px) {
+  .container {
+    width: 1000px;
+  }
+}
+
 .zone_container{
   width: 4em;
   height: 4em;
