@@ -1,0 +1,19 @@
+.zone_container{
+  width: 4em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zone_default {
+  width: 69%;
+  height: 4em;
+  border: 1px solid #999;
+}
+
+.zone_defense {
+  width: 4em;
+  height: 69%;
+  border: 1px solid #88F;
+}
