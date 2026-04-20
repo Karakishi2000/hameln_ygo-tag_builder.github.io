@@ -23,8 +23,8 @@
   width: 4em;
   height: 4em;
   position: relative;
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
   justify-content: center;
 }
 
