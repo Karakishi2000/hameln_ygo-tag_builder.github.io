@@ -7,7 +7,7 @@
   line-height: 170%;
   padding: 0px;
   margin: 0 0;
-  background-color: #ffcccc;
+  background-color: red;
 }
 
 @media screen and (orientation: landscape){
@@ -63,7 +63,7 @@ div{
   border: 1px solid #88F;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%)
+  transform: translateY(-50%);
 }
 
 .setting_pane {
