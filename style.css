@@ -43,7 +43,7 @@ div{
 
 .preview_pane {
   width: 100%;
-  padding: 15px;
+  padding: 0 20px;
   flex: 1 0 50%;
 }
 
