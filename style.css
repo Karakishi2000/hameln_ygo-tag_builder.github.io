@@ -7,7 +7,7 @@
   line-height: 170%;
   padding: 0px;
   margin: 0 0;
-  background-color: red;
+  background-color: white;
 }
 
 @media screen and (orientation: landscape){
@@ -70,6 +70,6 @@ div{
   background-color: lightgray;
   border: 1px solid black;
   flex: 1 1 50%;
-  width: 100%;
-  height: 100%;
+  width: stretch;
+  height: stretch;
 }
