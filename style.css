@@ -6,6 +6,7 @@
   height: 100%;
   line-height: 170%;
   padding: 0px;
+  margin: 0 0;
 }
 
 @media screen and (orientation: landscape){
