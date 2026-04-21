@@ -39,22 +39,33 @@
 <div class="setting_pane">
 <div style="height:1em;margin:5px 0;line-height:100%"><h4 style="color:gray;">ゾーン設定</h4></div>
 カード種別：<select name="card" id="card-select">
-  <option value="empty">-使用していないゾーン-</option>
-  <option value="facedown">裏側表示カード</option>
-  <option value="normal">通常モンスター</option>
-  <option value="effect">効果モンスター</option>
-  <option value="ritual">儀式モンスター</option>
-  <option value="fusion">融合モンスター</option>
-  <option value="syncro">シンクロモンスター</option>
-  <option value="xyz">エクシーズモンスター</option>
-  <option value="link">リンクモンスター</option>
-  <option value="magic">魔法カード</option>
-  <option value="trap">罠カード</option>
+  <option value="empty">-</option>
+  <option value="facedown">裏側表示</option>
+  <option value="normal">通常</option>
+  <option value="effect">効果</option>
+  <option value="ritual">儀式</option>
+  <option value="fusion">融合</option>
+  <option value="syncro">シンクロ</option>
+  <option value="xyz">エクシーズ</option>
+  <option value="link">リンク</option>
+  <option value="magic">魔法</option>
+  <option value="trap">罠</option>
 </select>
 <div>
   <input type="checkbox" id="pendulum" name="pendulum" />
   <label for="pendulum">ペンデュラム</label>
 </div>
+<div>
+<div style="display:inline">
+  <input type="radio" id="player" name="controller" value="player" checked />
+  <label for="player">自分</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="opponent" name="controller" value="opponent" />
+  <label for="opponent">相手</label>
+</div>
+</div>
+<div>
 <div style="display:inline">
   <input type="radio" id="attack" name="position" value="attack" checked />
   <label for="attack">縦</label>
@@ -62,6 +73,7 @@
 <div style="display:inline">
   <input type="radio" id="defense" name="position" value="defense" />
   <label for="defense">横</label>
+</div>
 </div>
 <div>
   <label for="icon">アイコン文字:</label>
