@@ -30,7 +30,7 @@
 <p></p>
 <div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div>
 </div>
-<div class="setting_pane">
+<div class="setting_pane">ゾーン設定
 <select name="card" id="card-select">
   <option value="empty">-使用していないゾーン-</option>
   <option value="facedown">裏側表示カード</option>
@@ -44,7 +44,10 @@
   <option value="magic">魔法カード</option>
   <option value="trap">罠カード</option>
 </select>
-<p></p>
+<div>
+  <input type="checkbox" id="pendulum" name="pendulum" />
+  <label for="pendulum">ペンデュラム</label>
+</div>
 <div style="display:inline">
   <input type="radio" id="attack" name="position" value="attack" checked />
   <label for="attack">攻撃表示or魔法罠</label>
@@ -52,10 +55,6 @@
 <div style="display:inline">
   <input type="radio" id="defense" name="position" value="defense" />
   <label for="defense">守備表示</label>
-</div>
-<div>
-  <input type="checkbox" id="pendulum" name="pendulum" />
-  <label for="pendulum">ペンデュラム</label>
 </div>
 </div>
 </body>
