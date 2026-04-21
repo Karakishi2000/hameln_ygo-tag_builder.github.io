@@ -34,7 +34,7 @@
 </div>
 <div class="setting_pane">
 <div style="height:1em;margin:5px 0;line-height:100%"><h4 style="color:gray;">ゾーン設定</h4></div>
-<select name="card" id="card-select">
+カード種別：<select name="card" id="card-select">
   <option value="empty">-使用していないゾーン-</option>
   <option value="facedown">裏側表示カード</option>
   <option value="normal">通常モンスター</option>
@@ -58,6 +58,14 @@
 <div style="display:inline">
   <input type="radio" id="defense" name="position" value="defense" />
   <label for="defense">守備表示</label>
+</div>
+<div>
+  <label for="icon">アイコン文字:</label>
+  <input type="text" id="icon" name="icon" maxlength="3" />
+</div>
+<div>
+  <label for="color-picker">背景色:</label>
+  <input type="color" value="#808080" id="color-picker" />
 </div>
 </div>
 </body>
