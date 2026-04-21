@@ -69,8 +69,9 @@ div{
 .setting_pane {
   background-color: lightgray;
   border: 1px solid black;
-  padding: 20px;
+  padding: 0px 20px;
   flex: 1 1 50%;
   width: stretch;
   height: stretch;
+  line-height: 100%;
 }
