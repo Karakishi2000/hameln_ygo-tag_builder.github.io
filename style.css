@@ -7,6 +7,7 @@
   line-height: 170%;
   padding: 0px;
   margin: 0 0;
+  background-color: #ffcccc;
 }
 
 @media screen and (orientation: landscape){
@@ -66,7 +67,7 @@ div{
 }
 
 .setting_pane {
-  background-color: light-gray;
+  background-color: lightgray;
   border: 1px solid black;
   flex: 1 1 50%;
   width: 100%;
