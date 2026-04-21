@@ -11,15 +11,15 @@
   <input type="checkbox" id="extra" name="extra" checked />
   <label for="extra">エクストラモンスターゾーン</label>
 </div>
-ゾーン数
 <div style="display:inline">
   <input type="radio" id="master" name="rule" value="master" checked />
-  <label for="huey">5</label>
+  <label for="master">マスターデュエル</label>
 </div>
 <div style="display:inline">
   <input type="radio" id="speed" name="rule" value="speed" />
-  <label for="dewey">3</label>
+  <label for="speed">スピードデュエル</label>
 </div>
+<p></p>
 <div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div>
 <p></p>
 <div class="zone_container"><div class="zone_default"></div><div class="zone_defense"></div></div><div class="zone_container"><div class="zone_default"></div><div class="zone_defense"></div></div><div class="zone_container"><div class="zone_default"></div><div class="zone_defense"></div></div><div class="zone_container"><div class="zone_default"></div><div class="zone_defense"></div></div><div class="zone_container"><div class="zone_default"></div><div class="zone_defense"></div></div>
@@ -30,7 +30,32 @@
 <p></p>
 <div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div><div class="zone_container"><div class="zone_default"></div></div>
 </div>
-<div class="setting_pane">仮置き設定ペイン
+<div class="setting_pane">
+<select name="card" id="card-select">
+  <option value="empty">-使用していないゾーン-</option>
+  <option value="facedown">裏側表示カード</option>
+  <option value="normal">通常モンスター</option>
+  <option value="effect">効果モンスター</option>
+  <option value="ritual">儀式モンスター</option>
+  <option value="fusion">融合モンスター</option>
+  <option value="syncro">シンクロモンスター</option>
+  <option value="xyz">エクシーズモンスター</option>
+  <option value="link">リンクモンスター</option>
+  <option value="magic">魔法カード</option>
+  <option value="trap">罠カード</option>
+</select>
+<div style="display:inline">
+  <input type="radio" id="attack" name="position" value="attack" checked />
+  <label for="attack">攻撃表示or魔法罠</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="defense" name="position" value="defense" />
+  <label for="defense">守備表示</label>
+</div>
+<div>
+  <input type="checkbox" id="pendulum" name="pendulum" />
+  <label for="pendulum">ペンデュラム</label>
+</div>
 </div>
 </body>
 </html>
