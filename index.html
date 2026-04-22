@@ -52,20 +52,18 @@
   <option value="trap">罠</option>
 </select>
 <div>
+  <label for="name">カード名:</label>
+  <input type="text" id="name" name="name" size=10 />
+</div>
+<div>
+  <label for="name-color">カード名文字色:</label>
+  <input type="color" value="#000000" id="name-color" />
+</div>
+<div>
   <input type="checkbox" id="pendulum" name="pendulum" />
   <label for="pendulum">ペンデュラム</label>
 </div>
-<div>
-<div style="display:inline">
-  <input type="radio" id="player" name="controller" value="player" checked />
-  <label for="player">自分</label>
-</div>
-<div style="display:inline">
-  <input type="radio" id="opponent" name="controller" value="opponent" />
-  <label for="opponent">相手</label>
-</div>
-</div>
-<div>
+<div>表示形式：
 <div style="display:inline">
   <input type="radio" id="attack" name="position" value="attack" checked />
   <label for="attack">縦</label>
@@ -91,6 +89,16 @@
 <div style="display:inline">
   <label for="def">DEF/</label>
   <input type="text" id="def" name="def" maxlength="6" size=5 />
+</div>
+</div>
+<div>コントロール：
+<div style="display:inline">
+  <input type="radio" id="player" name="controller" value="player" checked />
+  <label for="player">自分</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="opponent" name="controller" value="opponent" />
+  <label for="opponent">相手</label>
 </div>
 </div>
 </div>
