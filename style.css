@@ -9,11 +9,14 @@
 }
 
 /* タブレット向け（768px以上） */
-@media screen and (min-width: 768px) {
+@media screen and (orientation: landscape) {
   .container {
     flex-direction: row;
     width: 700px;
     margin: 0 auto;
+  }
+  .field_container {
+    font-size: 3vh;
   }
 }
 
@@ -39,11 +42,6 @@ div{
   display: grid;
   grid-template-columns: repeat(5, 4em);
   grid-template-rows: repeat(9, auto);
-}
-@media screen and (min-height: 30em) {
-  .field_container {
-    font-size: 3vh;
-  }
 }
 
 .zone_container {
