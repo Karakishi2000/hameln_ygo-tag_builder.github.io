@@ -31,6 +31,7 @@ p{
 
 div{
   box-sizing: border-box;
+  
 }
 
 .preview_pane {
@@ -43,11 +44,11 @@ div{
   display: inline-block;
   width: 4em;
   height: 4em;
-  margin:0 0;
+  margin: 0 0;
   position: relative;
 }
 
-.zone_default {
+.outline_vertical {
   display: block;
   width: 69%;
   height: 4em;
@@ -55,13 +56,20 @@ div{
   border: 1px solid #999;
 }
 
-.zone_defense {
+.outline_horizontal {
   width: 4em;
   height: 69%;
   border: 1px solid #88F;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.status_label {
+  width: 4em;
+  height: 1em;
+  margin: 0 0;
+  font-size: 0.5em;
 }
 
 .setting_pane {
