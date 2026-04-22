@@ -40,6 +40,13 @@ div{
   flex: 1 0 50%;
 }
 
+.field_container {
+  margin: 0.5em 0;
+  display: grid;
+  grid-template-columns: repeat(5, 4em);
+  grid-template-rows: repeat(9, auto);
+}
+
 .zone_container {
   display: inline-block;
   width: 4em;
