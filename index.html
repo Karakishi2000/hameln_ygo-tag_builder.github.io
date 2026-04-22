@@ -51,35 +51,29 @@
   <option value="magic">魔法</option>
   <option value="trap">罠</option>
 </select>
-<div>
-  <label for="name">カード名:</label>
-  <input type="text" id="name" name="name" size=10 />
-</div>
-<div>
-  <label for="name-color">カード名文字色:</label>
-  <input type="color" value="#000000" id="name-color" />
-</div>
-<div>
+<div style="display:inline">
   <input type="checkbox" id="pendulum" name="pendulum" />
   <label for="pendulum">ペンデュラム</label>
 </div>
-<div>表示形式：
+<div>
 <div style="display:inline">
-  <input type="radio" id="attack" name="position" value="attack" checked />
-  <label for="attack">縦</label>
+  <label for="name">カード名：</label>
+  <input type="text" id="name" name="name" size=15 />
 </div>
 <div style="display:inline">
-  <input type="radio" id="defense" name="position" value="defense" />
-  <label for="defense">横</label>
+  <label for="name-color">文字色:</label>
+  <input type="color" value="#000000" id="name-color" />
 </div>
 </div>
 <div>
+<div style="display:inline">
   <label for="icon">アイコン文字:</label>
   <input type="text" id="icon" name="icon" maxlength="3" size=2 />
 </div>
-<div>
+<div style="display:inline">
   <label for="color-picker">背景色:</label>
   <input type="color" value="#808080" id="color-picker" />
+</div>
 </div>
 <div>
 <div style="display:inline">
@@ -89,6 +83,16 @@
 <div style="display:inline">
   <label for="def">DEF/</label>
   <input type="text" id="def" name="def" maxlength="6" size=5 />
+</div>
+</div>
+<div>表示形式：
+<div style="display:inline">
+  <input type="radio" id="attack" name="position" value="attack" checked />
+  <label for="attack">縦</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="defense" name="position" value="defense" />
+  <label for="defense">横</label>
 </div>
 </div>
 <div>コントロール：
