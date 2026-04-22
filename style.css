@@ -83,12 +83,13 @@ div{
   padding: 0 0;
   line-height: 170%;
   flex: 1;
+  flex-wrap: wrap;
   width: stretch;
   height: stretch;
 }
 
 .tab_button {
-  flex: 1 1 50;
+  flex: 1;
   order: -1;
   background-color: lightgray;
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
