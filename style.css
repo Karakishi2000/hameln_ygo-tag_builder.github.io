@@ -76,23 +76,23 @@ div{
 }
 
 .setting_pane {
+  display: flex;
   background-color: gray;
   border: 1px solid black;
   margin: 0 0;
   padding: 0 0;
   line-height: 170%;
-  flex: 1 1 50%;
+  flex: 1;
   width: stretch;
   height: stretch;
-  position: sticky;
 }
 
 .tab_button {
-  display: inline-block;
+  flex: 1 1 50;
+  order: -1;
   background-color: lightgray;
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
   text-align: center;
-  width: 50%;
 }
 
 .tab_content {
