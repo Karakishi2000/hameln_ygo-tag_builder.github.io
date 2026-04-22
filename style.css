@@ -76,12 +76,26 @@ div{
 }
 
 .setting_pane {
-  background-color: lightgray;
+  background-color: gray;
   border: 1px solid black;
-  padding: 0px 20px;
+  margin: 0 0;
+  padding: 0 0;
   line-height: 170%;
   flex: 1 1 50%;
   width: stretch;
   height: stretch;
   position: sticky;
+}
+
+.tab_button {
+  background-color: lightgray;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  text-align: center;
+  width: 50%;
+}
+
+.tab_content {
+  background-color: lightgray;
+  margin: 0 0;
+  padding: 15px;
 }
