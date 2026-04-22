@@ -67,8 +67,10 @@ div{
 
 .status_label {
   width: 4em;
-  height: 2em;
-  margin: 0 0;
+  height: 1em;
+  margin: 0 0; 
+}
+.status_label > label{
   font-size: 50%;
 }
 
