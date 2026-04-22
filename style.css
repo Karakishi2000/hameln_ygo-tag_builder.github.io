@@ -13,7 +13,7 @@
   .container {
     flex-direction: row;
     width: 700px;
-    font-size: 3vh;
+    font-size: 75%;
   }
 }
 
