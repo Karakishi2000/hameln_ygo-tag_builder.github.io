@@ -11,7 +11,7 @@
 @media screen and (orientation: landscape){
   .container {
     flex-direction: row;
-    font-size: 3.5vh;
+    font-size: 3vh;
   }
 }
  
