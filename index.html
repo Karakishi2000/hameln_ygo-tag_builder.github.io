@@ -74,7 +74,11 @@
 <div class="tab_button" style="color:gray;">カード設定</div>
 <div class="tab_button" style="color:gray;opacity:0.5;">イラスト枠設定</div>
 <div class="tab_content">
-ｶｰﾄﾞ種別：<select name="card" id="card-select">
+<div>
+  <label for="name">カード名：</label>
+  <input type="text" id="name" name="name" style="width:stretch;" />
+</div>
+<div>カード種別：<select name="card" id="card-select">
   <option value="empty">-</option>
   <option value="facedown">裏側表示</option>
   <option value="normal">通常</option>
@@ -86,16 +90,12 @@
   <option value="link">リンク</option>
   <option value="magic">魔法</option>
   <option value="trap">罠</option>
-</select>
+</select></div>
 <div style="display:inline">
   <input type="checkbox" id="pendulum" name="pendulum" />
   <label for="pendulum">ペンデュラム</label>
 </div>
 <div>
-<div style="display:inline">
-  <label for="name">ｶｰﾄﾞ名：</label>
-  <input type="text" id="name" name="name" size="14" />
-</div>
 <div style="display:block;">
   <label for="name-color">文字色：</label>
   <input type="text" value="#000000" id="name-color" size="6" />
