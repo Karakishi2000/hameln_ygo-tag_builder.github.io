@@ -9,7 +9,7 @@
 }
 
 /* タブレット向け（768px以上） */
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 700px) {
   .container {
     flex-direction: row;
     width: 700px;
