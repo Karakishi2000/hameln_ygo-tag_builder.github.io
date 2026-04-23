@@ -100,7 +100,7 @@ div{
 }
 
 .tab_content {
-  grid-column: 1/2;
+  grid-column: 1 / span 2;
   background-color: lightgray;
   margin: 0 0;
   padding: 15px;
