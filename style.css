@@ -91,6 +91,7 @@ div{
 
 .tab_button {
   background-color: lightgray;
+  margin: 0 0;
   width: stretch;
   height: 2em;
   clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
