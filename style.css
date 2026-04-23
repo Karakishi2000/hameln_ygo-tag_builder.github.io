@@ -137,4 +137,14 @@ div{
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(3, auto);
+  text-align: center;
+}
+
+.link-marker > input {
+  display: none;
+}
+.link-marker {
+  width: 2em;
+  height: 2em;
+  -webkit-text-stroke: 1px gray;
 }
