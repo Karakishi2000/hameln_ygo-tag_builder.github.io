@@ -82,7 +82,7 @@ div{
   margin: 0 0;
   padding: 0 0;
   line-height: 170%;
-  flex: 1;
+  flex: 1 0 50%;
   flex-wrap: wrap;
   width: stretch;
   height: stretch;
@@ -92,7 +92,7 @@ div{
   flex: 1;
   order: -1;
   background-color: lightgray;
-  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
   text-align: center;
 }
 
