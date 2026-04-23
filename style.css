@@ -36,7 +36,7 @@ div{
 
 .field_container {
   margin: 10px 0;
-  font-size: 4vmin;
+  font-size: clamp(10px, 4vmin, 16px);
   display: grid;
   grid-template-columns: repeat(5, 4em);
   grid-template-rows: repeat(9, auto);
