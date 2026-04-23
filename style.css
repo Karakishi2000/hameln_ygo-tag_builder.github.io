@@ -40,7 +40,7 @@ div{
 
 .field_menu {
   grid-area: field_menu;
-  background-color: gray;
+  background-color: lightgray;
   border: 1px solid black;
   margin: 0 0;
   padding: 10px;
