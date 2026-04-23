@@ -1,5 +1,6 @@
 /* 基本スタイル（スマホ向け） */
 .container {
+  box-sizing: border-box;
   display: grid;
   grid-template-areas:
     "field_menu"
@@ -36,7 +37,6 @@ p{
 
 div{
   box-sizing: border-box;
-  
 }
 
 .field_menu {
