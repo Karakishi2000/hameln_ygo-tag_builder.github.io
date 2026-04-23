@@ -8,7 +8,6 @@
     "output"
     "setting";
   grid-template-rows: auto auto auto 1fr;
-  flex-direction: column;
   width: 100%;
   height: 100svh;
   padding: 0px;
@@ -24,7 +23,6 @@
       "preview output";
     grid-template-rows: auto 1fr auto;
     grid-template-columns: auto 1fr;
-    flex-direction: row;
     width: 750px;
     height: clamp(0, 100svh, 750px);
     margin: 0 auto;
@@ -46,7 +44,7 @@ div{
   background-color: lightgray;
   border: 1px solid black;
   margin: 0 0;
-  padding: 10px;
+  padding: 0.5em 1em;
   line-height: 170%;
   width: stretch;
 }
@@ -54,7 +52,6 @@ div{
 .preview_pane {
   width: 100%;
   padding: 0 0;
-  flex: 1 0 50%;
   grid-area: preview;
 }
 
@@ -102,7 +99,7 @@ div{
 
 .output_button {
   grid-area: output;
-  margin: 10px;
+  margin: 0.5em 1em;
 }
 
 .setting_pane {
@@ -110,13 +107,11 @@ div{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 2em auto;
-  gap: 0;
   background-color: gray;
   border: 1px solid black;
   margin: 0 0;
   padding: 0 0;
   line-height: 170%;
-  flex: 1 0 50%;
   width: stretch;
   height: stretch;
 }
