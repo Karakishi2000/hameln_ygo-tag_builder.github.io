@@ -42,7 +42,7 @@ div{
 
 .field_container {
   margin: 10px 0;
-  font-size: clamp(10px, 3vh, 16px);
+  font-size: clamp(8px, 3vh, 16px);
   display: grid;
   grid-template-columns: repeat(5, 4em);
   grid-template-rows: repeat(9, auto);
