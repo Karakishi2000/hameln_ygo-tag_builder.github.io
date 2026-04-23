@@ -126,8 +126,9 @@ div{
 }
 
 .tab_content {
-  display: grid;
   grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: lightgray;
   margin: 0 0;
   padding: 15px;
