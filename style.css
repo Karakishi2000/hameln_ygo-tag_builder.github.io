@@ -8,7 +8,7 @@
   grid-template-rows: auto auto 1fr;
   flex-direction: column;
   width: 100%;
-  height: clamp(0, 100lvh, 750px);
+  height: 100lvh;
   padding: 0px;
   margin: 0 0;
 }
@@ -23,6 +23,7 @@
     grid-template-columns: auto 1fr;
     flex-direction: row;
     width: 750px;
+    height: clamp(0, 100lvh, 750px);
     margin: 0 auto;
   }
 }
