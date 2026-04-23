@@ -36,7 +36,7 @@ div{
 
 .preview_pane {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 10px;
   flex: 1 0 50%;
   grid-area: preview;
 }
