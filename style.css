@@ -18,7 +18,7 @@
   .container {
     grid-template-areas:
       "preview field_menu"
-      "preview setting";
+      "preview setting"
       "preview setting";
     grid-template-columns: auto 1fr;
     flex-direction: row;
