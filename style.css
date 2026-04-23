@@ -77,6 +77,7 @@ div{
 
 .setting_pane {
   display: flex;
+  flex-direction: row;
   background-color: gray;
   border: 1px solid black;
   margin: 0 0;
@@ -92,6 +93,7 @@ div{
   flex: 1;
   order: -1;
   background-color: lightgray;
+  height: 2em;
   clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
   text-align: center;
 }
