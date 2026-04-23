@@ -76,23 +76,22 @@ div{
 }
 
 .setting_pane {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2em auto;
   background-color: gray;
   border: 1px solid black;
   margin: 0 0;
   padding: 0 0;
   line-height: 170%;
-  flex: 1 0 50%;
-  flex-wrap: wrap;
+  flex: 1;
   width: stretch;
   height: stretch;
 }
 
 .tab_button {
-  flex: 1;
-  order: -1;
   background-color: lightgray;
+  width: stretch;
   height: 2em;
   clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
   text-align: center;
