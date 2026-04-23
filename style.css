@@ -85,7 +85,7 @@ div{
   margin: 0 0;
   padding: 0 0;
   line-height: 170%;
-  flex: 1;
+  flex: 1 0 50%;
   width: stretch;
   height: stretch;
 }
