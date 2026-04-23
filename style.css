@@ -16,6 +16,7 @@
   .container {
     grid-template-areas:
       "preview setting";
+    grid-template-columns: auto 1fr;
     flex-direction: row;
     width: 750px;
     margin: 0 auto;
