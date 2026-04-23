@@ -149,6 +149,7 @@ div{
   display: inline-block;
   width: 2em;
   height: 2em;
+  line-height: 2em;
   -webkit-text-stroke: 2px gray;
   text-align: center;
   user-select: none;
