@@ -135,6 +135,10 @@ div{
 .tab_button input {
   display: none;
 }
+.tab_button label  {
+  line-height: 2em;
+  width: 100%;
+}
 
 .tab_content {
   display: none;
