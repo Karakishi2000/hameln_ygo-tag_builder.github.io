@@ -104,7 +104,7 @@ div{
 
 .setting_pane {
   grid-area: setting;
-  display: grid;
+  display: flex;
   grid-template-columns: 50% 50%;
   grid-template-rows: 2em auto;
   background-color: gray;
@@ -117,6 +117,8 @@ div{
 }
 
 .tab_button {
+  order: -1;
+  flex: 1;
   color: gray;
   background-color: lightgray;
   margin: 0 0;
