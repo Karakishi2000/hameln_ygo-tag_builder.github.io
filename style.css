@@ -148,11 +148,11 @@ label {
 .tab_content {
   display: none;
   grid-template-columns: auto 1fr;
-  grid-column: 1 / span 2;
   background-color: lightgray;
   margin: 0 0;
   padding: 15px;
   width: 100%;
+  height: stretch;
 }
 .tab_button:has(:checked) + .tab_content {
   display: grid;
