@@ -105,6 +105,7 @@ div{
 .setting_pane {
   grid-area: setting;
   display: flex;
+  flex-wrap: wrap;
   grid-template-columns: 50% 50%;
   grid-template-rows: 2em auto;
   background-color: gray;
