@@ -39,6 +39,10 @@ div{
   box-sizing: border-box;
 }
 
+label {
+  user-select: none;
+}
+
 .field_menu {
   grid-area: field_menu;
   background-color: lightgray;
@@ -170,7 +174,6 @@ div{
   height: 2em;
   line-height: 2em;
   text-align: center;
-  user-select: none;
   opacity: 50%;
   color: black;
   -webkit-text-stroke: 2px gray;
