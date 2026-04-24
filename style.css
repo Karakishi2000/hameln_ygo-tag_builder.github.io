@@ -159,8 +159,8 @@ label {
 
 .link-marker_grid {
   display: grid;
-  grid-template-columns: repeat(3, 3em);
-  grid-template-rows: repeat(3, 3em);
+  grid-template-columns: repeat(3, 2.5em);
+  grid-template-rows: repeat(3, 2.5em);
   text-align: center;
   margin: 0 auto;
 }
@@ -172,8 +172,8 @@ label {
   display: inline-block;
   width: 100%;
   height: 100%;
-  font-size: 2em;
-  line-height: 150%;
+  font-size: 125%;
+  line-height: 200%;
   text-align: center;
   opacity: 50%;
   color: black;
