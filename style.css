@@ -117,22 +117,33 @@ div{
 }
 
 .tab_button {
+  color: gray;
   background-color: lightgray;
   margin: 0 0;
   width: stretch;
   height: 2em;
   clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
   text-align: center;
+  opacity: 50%;
+}
+.tab_button:has(:checked) {
+  opacity: 100%;
+}
+.tab_button input {
+  display: none;
 }
 
 .tab_content {
-  grid-column: 1 / span 2;
-  display: grid;
+  display: none;
   grid-template-columns: auto 1fr;
+  grid-column: 1 / span 2;
   background-color: lightgray;
   margin: 0 0;
   padding: 15px;
   width: 100%;
+}
+.tab_button:has(:checked) + .tab_content {
+  display: grid;
 }
 
 .link-marker_grid {
