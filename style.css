@@ -128,7 +128,7 @@ div{
 .tab_content {
   grid-column: 1 / span 2;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   background-color: lightgray;
   margin: 0 0;
   padding: 15px;
@@ -140,6 +140,7 @@ div{
   grid-template-columns: repeat(3, 2em);
   grid-template-rows: repeat(3, 2em);
   text-align: center;
+  margin: 0 auto;
 }
 
 .link-marker > input {
