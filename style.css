@@ -161,6 +161,6 @@ div{
   -webkit-text-stroke: 2px white;
 }
 
-#link-marker:checked ~ * {
+.link-marker_grid:has(#link-marker:checked) > .link-marker {
   opacity: 100%;
 }
