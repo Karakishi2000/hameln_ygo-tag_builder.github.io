@@ -140,6 +140,7 @@ label {
   display: none;
 }
 .tab_button label  {
+  display: inline-block;
   line-height: 2em;
   width: 100%;
 }
