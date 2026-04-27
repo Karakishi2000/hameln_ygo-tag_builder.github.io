@@ -137,7 +137,7 @@ label {
 }
 
 .tab_content {
-  grid-column: 1 / -1;
+  grid-column: -1 / 1;
   display: none;
   grid-template-columns: auto;
   grid-auto-column: 1fr;
