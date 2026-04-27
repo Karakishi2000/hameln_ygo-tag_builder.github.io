@@ -65,6 +65,10 @@ label {
   grid-template-rows: repeat(9, auto);
 }
 
+.field_menu:has(#speed:checked) + .preview_pane .field_container {
+  grid-template-columns: 0 repeat(3, 4em) 0;
+}
+
 .zone_container {
   display: inline-block;
   width: 4em;
@@ -97,10 +101,6 @@ label {
 }
 .status_label > label{
   font-size: 50%;
-}
-
-.field_menu:has(#speed:checked) + .preview_pane .master {
-  display: none;
 }
 
 .setting_pane {
