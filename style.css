@@ -5,9 +5,8 @@
   grid-template-areas:
     "field_menu"
     "preview"
-    "output"
     "setting";
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto auto 1fr;
   width: 100%;
   height: 100svh;
   padding: 0px;
@@ -19,10 +18,9 @@
   .container {
     grid-template-areas:
       "preview field_menu"
-      "preview setting"
-      "preview output";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: auto 1fr;
+      "preview setting";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 750px;
     height: clamp(0, 100svh, 750px);
     margin: 0 auto;
@@ -61,7 +59,7 @@ label {
 
 .field_container {
   margin: 0.5em 1em;
-  font-size: clamp(8px, 4svh, 15px);;
+  font-size: clamp(10px, calc(calc(100svh - 2em) / 25), 15px);
   display: grid;
   grid-template-columns: repeat(5, 4em);
   grid-template-rows: repeat(9, auto);
@@ -99,11 +97,6 @@ label {
 }
 .status_label > label{
   font-size: 50%;
-}
-
-.output_button {
-  grid-area: output;
-  margin: 0.5em 1em;
 }
 
 .setting_pane {
