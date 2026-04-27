@@ -99,6 +99,10 @@ label {
   font-size: 50%;
 }
 
+.field_menu:has(#speed:checked) + .preview_pane .master {
+  display: none;
+}
+
 .setting_pane {
   grid-area: setting;
   display: grid;
