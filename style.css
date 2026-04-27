@@ -139,7 +139,9 @@ label {
 .tab_content {
   grid-column: span 2;
   display: none;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto;
+  grid-auto-column: 1fr;
+  grid-template-rows: auto;
   grid-auto-rows: 1fr;
   background-color: lightgray;
   margin: 0 0;
