@@ -59,7 +59,7 @@ label {
 
 .field_container {
   margin: 0.5em 1em;
-  font-size: clamp(10px, calc(calc(100svh - 2em) / 25), 15px);
+  font-size: clamp(8px, calc(calc(100svh - 2em) / 25), 16px);
   display: grid;
   grid-template-columns: repeat(5, 4em);
   grid-template-rows: repeat(9, auto);
