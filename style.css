@@ -68,17 +68,25 @@ label {
 .zone_container {
   display: inline-block;
   width: 4em;
+  height: auto;
+  margin: 0 0;
+}
+
+.card_container {
+  display: block;
+  width: 4em;
   height: 4em;
   margin: 0 0;
   position: relative;
 }
 
 .outline_vertical {
-  display: block;
   width: 69%;
   height: 4em;
-  margin: 0 auto;
   border: 1px solid #999;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .outline_horizontal {
@@ -91,12 +99,20 @@ label {
 }
 
 .status_label {
+  display: block;
   width: 4em;
   height: 1em;
   margin: 0 0; 
 }
 .status_label > label{
   font-size: 50%;
+}
+
+.zone_spacer {
+  display: inline-block;
+  width: 4em;
+  height: 1em;
+  margin: 0 0; 
 }
 
 .setting_pane {
