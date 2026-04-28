@@ -119,14 +119,13 @@ label {
 
 .tab_button {
   grid-row: 1;
-  color: gray;
   background-color: lightgray;
   margin: 0 0;
   width: stretch;
   height: 2em;
   clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
   text-align: center;
-  opacity: 50%;
+  opacity: 0%;
 }
 .tab_button:has(:checked) {
   opacity: 100%;
