@@ -63,6 +63,14 @@ label {
   display: grid;
   grid-template-columns: auto ;
   grid-template-rows: repeat(5, auto);
+  gap: 0;
+}
+
+.zone_row {
+  margin: 0 0;
+  display: grid;
+  grid-auto-columns: 4em;
+  gap: 0;
 }
 
 .zone_container {
