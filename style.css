@@ -124,7 +124,7 @@ label {
   margin: 0 0; 
 }
 
-.field_menu:has(#speed:checked) + div master {
+.field_menu:has(#speed:checked) + div .master {
   display: none;
 }
 
