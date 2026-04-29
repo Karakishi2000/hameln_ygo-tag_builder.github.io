@@ -21,7 +21,7 @@
       "preview setting";
     grid-template-rows: auto 1fr;
     grid-template-columns: auto 1fr;
-    width: clamp(750px, 100vw, 1000px);
+    width: 768px;
     height: clamp(0, 100svh, 750px);
     margin: 0 auto;
   }
