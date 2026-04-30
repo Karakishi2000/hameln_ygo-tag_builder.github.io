@@ -173,7 +173,7 @@ label {
   grid-template-columns: auto;
   grid-auto-column: 1fr;
   grid-template-rows: auto;
-  grid-auto-rows: 1fr;
+  grid-auto-rows: auto;
   background-color: lightgray;
   margin: 0 0;
   padding: 15px;
