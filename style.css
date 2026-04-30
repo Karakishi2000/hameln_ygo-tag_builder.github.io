@@ -124,6 +124,10 @@ label {
   margin: 0 0; 
 }
 
+.field_menu:not(:has(#extra:checked)) + div .extra .zone_container {
+  display: none;
+}
+
 .field_menu:has(#speed:checked) + div .master {
   display: none;
 }
