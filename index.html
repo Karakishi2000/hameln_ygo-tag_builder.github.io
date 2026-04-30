@@ -130,10 +130,33 @@
   <label class="link-marker"><input type="checkbox" id="bottom-right">◢</label>
 </div>
 </div>
+
 <div class="tab_button"><input type="radio" name="TAB" id="design"><label for="design">デザイン設定</label></div>
 <div class="tab_content">
-  
+<div>
+  <label for="atk">カード名文字色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="name_color" name="name_color" maxlength="6" size=5 />
 </div>
+<div>
+  <label for="atk">イラスト枠背景色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="bg_color" name="bg_color" maxlength="6" size=5 />
+</div>
+<fieldset><legend>イラスト代用テキスト</legend>
+<div>
+  <label for="atk">文字色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon_color" name="icon_color" maxlength="6" size=5 />
+</div>
+<div>
+  <label for="atk">文字背景色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon_bg_color" name="icon_bg_color" maxlength="6" size=5 />
+</div>
+<div>
+  <label for="atk">文字サイズ：</label>
+  <input type="text" inputmode="url" pattern="" placeholder="1" id="icon_size" name="icon_size" maxlength="6" size=5 />
+</div>
+</fieldset>
+</div>
+
 </div>
 </body>
 </html>
