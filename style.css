@@ -20,7 +20,7 @@
       "preview field_menu"
       "preview setting";
     grid-template-rows: auto 1fr;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 768px;
     height: clamp(0, 100svh, 750px);
     margin: 0 auto;
