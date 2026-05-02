@@ -207,10 +207,14 @@ label {
   -webkit-text-stroke: 2px gray;
 }
 .link-marker:has(:checked) {
-  color: red;
+  color: gray;
   -webkit-text-stroke: 2px white;
 }
 
 .link-marker_grid:has(#link-marker:checked) > .link-marker {
   opacity: 100%;
+}
+.link-marker_grid:has(#link-marker:checked) > .link-marker:has(:checked) {
+  color: red;
+  -webkit-text-stroke: 2px white;
 }
