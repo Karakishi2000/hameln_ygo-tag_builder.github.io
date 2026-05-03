@@ -6,11 +6,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="container">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <div class="field_menu">
 <div style="display:inline">
   <input type="checkbox" id="extra" name="extra" checked />
-  <label for="extra">EXゾーン</label>
+  <label id="app" for="extra">{{EX_label}}</label>
 </div>
+<script>
+  const { createApp, ref } = Vue
+
+  createApp({
+    setup() {
+      const EX_label = ref('Extra Zone')
+      return {
+        EX_label
+      }
+    }
+  }).mount('#app')
+</script>
 <div style="display:inline">
   <input type="radio" id="master" name="rule" value="master" checked />
   <label for="master">マスター</label>
