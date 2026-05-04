@@ -11,25 +11,12 @@
 
 <script>
   const { createApp, ref } = Vue
-
-  const ChildComp = createApp({
-    props: {
-      msg: String
-    },
-    template: `
-      <h2>{{ msg || 'No props passed yet' }}</h2>
-    `
-  })
   
   createApp({
-    components: {
-      ChildComp
-    },
     setup() {
       const text = ref('Extra Zone')
       return {
-        text,
-        greeting
+        text
       }
     }
   }).mount('#app')
@@ -37,7 +24,6 @@
   
 <div id="app">
   <p>{{text}}</p>
-  <child-comp :msg="greeting"></child-comp>
 </div>
 
 </body>
