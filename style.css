@@ -51,14 +51,12 @@ label {
   width: stretch;
 }
 
-#preview_pane {
+#field_preview {
+  grid-area: preview;
+  box-sizing: margin-box;
+  margin: 0.5em 1em;
   width: 100%;
   padding: 0 0;
-  grid-area: preview;
-}
-
-#field_container {
-  margin: 0.5em 1em;
   font-size: clamp(8px, 4svh, 15px);
   display: grid;
   grid-template-columns: auto ;
@@ -89,22 +87,28 @@ label {
   position: relative;
 }
 
-.outline_vertical {
-  width: 69%;
-  height: 4em;
-  border: 1px solid #999;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.outline_horizontal {
+.zone_row.monster .card_container::before {
+  content: "";
+  box-sizing: border-box;
   width: 4em;
   height: 69%;
   border: 1px solid #88F;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 30;
+}
+
+.card_container::after {
+  content: "";
+  box-sizing: border-box;
+  width: 69%;
+  height: 4em;
+  border: 1px solid #999;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
 }
 
 .status_label {
