@@ -21,8 +21,8 @@
 </div>
 <div align="right"><button type="button">特殊タグをクリップボードに出力</button></div>
 </div>
-<div id="preview_pane">
-<div id="field_container">
+
+<div id="field_preview">
 <div class="zone_row opponent">
 <div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
 <div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
@@ -43,7 +43,7 @@
 <div class="zone_spacer"></div>
 <div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 </div>
-<div class="zone_row monster ">
+<div class="zone_row monster">
 <div class="zone_container master"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 <div class="zone_container"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 <div class="zone_container"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
@@ -58,7 +58,6 @@
 <div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
 </div>
 </div>
-</div>
   
 <div id="setting_pane">
 <div class="tab_button"><input type="radio" name="TAB" id="card" checked><label for="card">カード情報</label></div>
@@ -67,7 +66,6 @@
   <label for="name">カード名：</label>
   <input type="text" id="name" name="name" style="width:calc(100% - 8em);" />
 </div>
-  
 <div>カード種別：<select name="card" id="card-select">
   <option value="empty">-</option>
   <option value="facedown">裏側表示</option>
