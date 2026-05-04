@@ -27,6 +27,7 @@
     },
     data() {
       return {
+        text: 'It is not child',
         greeting: 'Hello from parent'
       }
     }
@@ -34,6 +35,7 @@
 </script>
   
 <div id="app">
+  <p>{{text}}</p>
   <child-comp :msg="greeting"></child-comp>
 </div>
 
