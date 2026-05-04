@@ -2,25 +2,33 @@
 <html lang="jp">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <title>CSS test</title>
+  <title>Vue HTML test</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="container">
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-<div id="app">{{ message }}</div>
+  
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <script>
   const { createApp } = Vue
+　import ChildComp from './ChildComp.js'
 
   createApp({
+    components: {
+      ChildComp
+    },
     data() {
       return {
-        message: 'Hello Vue!'
+        greeting: 'Hello from parent'
       }
     }
   }).mount('#app')
 </script>
+  
+<div id="app">
+  <child-comp :msg="greeting"></child-comp>
+</div>
+
 <div id="field_menu">
 <div style="display:inline">
   <input type="checkbox" id="extra" name="extra" checked />
@@ -36,8 +44,10 @@
 </div>
 <div align="right"><button type="button">特殊タグをクリップボードに出力</button></div>
 </div>
+  
 <div id="preview_pane">
 <div id="field_container">
+  
 <div class="zone_row opponent">
 <div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
 <div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
@@ -45,6 +55,7 @@
 <div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
 <div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
 </div>
+  
 <div class="zone_row opponent monster">
 <div class="zone_container master"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
 <div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
@@ -52,12 +63,14 @@
 <div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
 <div class="zone_container master"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
 </div>
+  
 <div class="zone_row extra monster">
 <div class="zone_spacer master"></div>
 <div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 <div class="zone_spacer"></div>
 <div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 </div>
+  
 <div class="zone_row monster ">
 <div class="zone_container master"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 <div class="zone_container"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
@@ -65,6 +78,7 @@
 <div class="zone_container"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 <div class="zone_container master"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
 </div>
+  
 <div class="zone_row">
 <div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
 <div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
@@ -72,6 +86,7 @@
 <div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
 <div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
 </div>
+  
 </div>
 </div>
   
