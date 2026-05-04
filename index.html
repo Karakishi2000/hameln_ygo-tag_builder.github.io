@@ -64,7 +64,7 @@
     </div>
     <div>
       <div>
-        <label for="name-color">文字色：#</label><input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="name-color" name="name-color" maxlength="6" size=5 />
+        <label for="name-color-hex">文字色：#</label><input type="text" inputmode="url" pattern="^#([0-9a-fA-F]{3}){1,2}$" placeholder="#000000" id="name-color-hex" maxlength="7" oninput="syncColor(event,'name-color-picker')" /><input type="color" id="name-color-picker" oninput="syncColor(event,'name-color-hex')" />
       </div>
       <label for="card-type">カード種別：</label><select name="card-type" id="card-type">
         <option value="empty">-</option>
@@ -126,6 +126,15 @@
 </div>
 <script>
   
+function syncColor(event, destId){
+	let hex = event.target.value.trim().toUpperCase();
+    if (/^#([0-9A-F]{3}){1,2}$/i.test(hex)) {
+        if (hex.length === 4) {
+            hex = "#" + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
+        }
+		document.getElementById(destId).value = hex;
+	}
+}
 </script>
 </body>
 </html>
