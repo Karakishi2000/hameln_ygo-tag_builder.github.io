@@ -21,8 +21,8 @@
       "preview setting";
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
-    width: 768px;
-    height: clamp(0, 100svh, 750px);
+    width: clamp(0, 100%, 800px);
+    height: clamp(0, 100lvh, 800px);
     margin: 0 auto;
   }
 }
