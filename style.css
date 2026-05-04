@@ -22,7 +22,7 @@
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
     width: clamp(0, 100%, 800px);
-    height: clamp(0, 100lvh, 800px);
+    height: clamp(0, 100svh, 800px);
     margin: 0 auto;
   }
 }
@@ -54,7 +54,7 @@ label {
   margin: 0.5em 1em;
   width: auto;
   padding: 0 0;
-  font-size: clamp(8px, 4lvh, 15px);
+  font-size: clamp(8px, 4svh, 15px);
   display: grid;
   grid-template-columns: auto ;
   grid-template-rows: repeat(5, min-content);
