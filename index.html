@@ -10,7 +10,7 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <script>
-  const { createApp } = Vue
+  const { createApp, ref } = Vue
 
   const ChildComp = createApp({
     props: {
@@ -25,10 +25,11 @@
     components: {
       ChildComp
     },
-    data() {
+    setup() {
+      const text = ref('Extra Zone')
       return {
-        text: 'It is not child',
-        greeting: 'Hello from parent'
+        text,
+        greeting
       }
     }
   }).mount('#app')
