@@ -81,28 +81,15 @@
         <option value="trap">罠</option>
       </select>
       <div class="status_input">
-        <div style="display:inline">
-          <label for="atk">ATK/</label><input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="atk" name="atk" />
+        <div>
+          <input type="radio" id="attack" name="position" value="attack" checked /><label for="attack">ATK/</label><input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="atk" name="atk" />
         </div>
-        <div style="display:inline">
-          <label for="def">DEF/</label><input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="def" name="def" />
-        </div>
-      </div>
-      <div>表示形式：
-        <div style="display:inline">
-          <input type="radio" id="attack" name="position" value="attack" checked /><label for="attack">縦</label>
-        </div>
-        <div style="display:inline">
-          <input type="radio" id="defense" name="position" value="defense" /><label for="defense">横</label>
+        <div>
+          <input type="radio" id="defense" name="position" value="defense" /><label for="defense">DEF/</label><input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="def" name="def" />
         </div>
       </div>
-      <div>ｺﾝﾄﾛｰﾙ：
-        <div style="display:inline">
-          <input type="radio" id="player" name="controller" value="player" checked /><label for="player">自分</label>
-        </div>
-        <div style="display:inline">
-          <input type="radio" id="opponent" name="controller" value="opponent" /><label for="opponent">相手</label>
-        </div>
+      <div>
+        <label>ｺﾝﾄﾛｰﾙ：</label><input type="radio" id="player" name="controller" value="player" checked /><label for="player">自分</label><input type="radio" id="opponent" name="controller" value="opponent" /><label for="opponent">相手</label>
       </div>
     </div>
     
