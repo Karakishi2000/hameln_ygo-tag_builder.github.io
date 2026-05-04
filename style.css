@@ -51,7 +51,7 @@ label {
 
 #field_preview {
   grid-area: preview;
-  box-sizing: margin-box;
+  box-sizing: content-box;
   margin: 0.5em 1em;
   width: 100%;
   padding: 0 0;
