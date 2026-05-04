@@ -189,7 +189,11 @@ label {
 #name {
   width:calc(100% - 7em);
 }
-#name-color, #atk, #def {
+#name-color-hex　{
+  width: 4em;
+}
+
+#atk, #def {
   width: 3.5em;
 }
 
