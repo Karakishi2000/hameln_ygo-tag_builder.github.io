@@ -11,8 +11,16 @@
 
 <script>
   import { createApp } from 'vue'
-　import ChildComp from './ChildComp.js'
 
+  const ChildComp = createApp({
+    props: {
+      msg: String
+    },
+    template: `
+      <h2>{{ msg || 'No props passed yet' }}</h2>
+    `
+  })
+  
   createApp({
     components: {
       ChildComp
