@@ -51,9 +51,8 @@ label {
 
 #field_preview {
   grid-area: preview;
-  box-sizing: content-box;
   margin: 0.5em 1em;
-  width: 100%;
+  width: auto;
   padding: 0 0;
   font-size: clamp(8px, 4svh, 15px);
   display: grid;
@@ -143,8 +142,8 @@ label {
   margin: 0 0;
   padding: 0 0;
   line-height: 170%;
-  width: stretch;
-  height: stretch;
+  width: auto;
+  height: auto;
   background-color: gray;
   border: 1px solid black;
 }
@@ -180,7 +179,7 @@ label {
   margin: 0 0;
   padding: 15px;
   width: 100%;
-  height: stretch;
+  height: auto;
   background-color: lightgray;
 }
 .tab_button:has(:checked) + .tab_content {
