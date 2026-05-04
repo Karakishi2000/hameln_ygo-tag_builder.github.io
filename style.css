@@ -178,7 +178,7 @@ label {
   grid-auto-rows: auto;
   margin: 0 0;
   padding: 15px;
-  width: 100%;
+  width: auto;
   height: auto;
   background-color: lightgray;
 }
