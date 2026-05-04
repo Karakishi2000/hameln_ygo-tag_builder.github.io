@@ -174,16 +174,23 @@ label {
   display: none;
   grid-template-columns: auto;
   grid-auto-column: 1fr;
-  grid-template-rows: auto;
-  grid-auto-rows: auto;
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
   margin: 0 0;
-  padding: 15px;
+  padding: 0.5em 1em;
   width: auto;
   height: auto;
   background-color: lightgray;
 }
 .tab_button:has(:checked) + .tab_content {
   display: grid;
+}
+
+#name {
+  width:calc(100% - 7em);
+}
+#atk, #def {
+  width: 3.5em;
 }
 
 .link-marker_grid {
