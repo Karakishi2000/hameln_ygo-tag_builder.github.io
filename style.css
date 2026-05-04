@@ -1,5 +1,5 @@
 /* 基本スタイル（スマホ向け） */
-.container {
+#container {
   box-sizing: border-box;
   display: grid;
   grid-template-areas:
@@ -15,7 +15,7 @@
 
 /* タブレット向け（768px以上） */
 @media screen and (min-width: 768px) {
-  .container {
+  #container {
     grid-template-areas:
       "preview field_menu"
       "preview setting";
@@ -41,7 +41,7 @@ label {
   user-select: none;
 }
 
-.field_menu {
+#field_menu {
   grid-area: field_menu;
   background-color: lightgray;
   border: 1px solid black;
@@ -51,13 +51,13 @@ label {
   width: stretch;
 }
 
-.preview_pane {
+#preview_pane {
   width: 100%;
   padding: 0 0;
   grid-area: preview;
 }
 
-.field_container {
+#field_container {
   margin: 0.5em 1em;
   font-size: clamp(8px, 4svh, 15px);
   display: grid;
@@ -124,15 +124,15 @@ label {
   margin: 0 0; 
 }
 
-.field_menu:not(:has(#extra:checked)) + div .extra .zone_container {
+#field_menu:not(:has(#extra:checked)) + div .extra .zone_container {
   display: none;
 }
 
-.field_menu:has(#speed:checked) + div .master {
+#field_menu:has(#speed:checked) + div .master {
   display: none;
 }
 
-.setting_pane {
+#setting_pane {
   grid-area: setting;
   display: grid;
   grid-template-columns: 1fr 1fr;
