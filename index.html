@@ -10,9 +10,17 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <script>
-  const { createApp } = Vue
-　import ChildComp from './ChildComp.js'
+  import { createApp } from 'vue'
 
+  const ChildComp = createApp({
+    props: {
+      msg: String
+    },
+    template: `
+      <h2>{{ msg || 'No props passed yet' }}</h2>
+    `
+  })
+  
   createApp({
     components: {
       ChildComp
