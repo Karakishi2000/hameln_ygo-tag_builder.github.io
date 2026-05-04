@@ -172,8 +172,8 @@ label {
 .tab_content {
   grid-column: 1 / -1;
   display: none;
-  grid-template-columns: auto;
-  grid-auto-column: 1fr;
+  grid-template-columns: 1fr;
+  grid-auto-columns: auto;
   grid-template-rows: max-content;
   grid-auto-rows: max-content;
   margin: 0 0;
