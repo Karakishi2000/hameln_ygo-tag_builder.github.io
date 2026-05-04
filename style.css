@@ -33,9 +33,6 @@ p{
   clear: both;
 }
 
-div{
-  box-sizing: border-box;
-}
 
 label {
   user-select: none;
@@ -43,12 +40,13 @@ label {
 
 #field_menu {
   grid-area: field_menu;
-  background-color: lightgray;
-  border: 1px solid black;
+  box-sizing: border-box;
   margin: 0 0;
   padding: 0.5em 1em;
-  line-height: 170%;
   width: stretch;
+  line-height: 170%;
+  background-color: lightgray;
+  border: 1px solid black;
 }
 
 #field_preview {
@@ -138,16 +136,17 @@ label {
 
 #setting_pane {
   grid-area: setting;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2em auto;
-  background-color: gray;
-  border: 1px solid black;
   margin: 0 0;
   padding: 0 0;
   line-height: 170%;
   width: stretch;
   height: stretch;
+  background-color: gray;
+  border: 1px solid black;
 }
 
 .tab_button {
@@ -178,11 +177,11 @@ label {
   grid-auto-column: 1fr;
   grid-template-rows: auto;
   grid-auto-rows: auto;
-  background-color: lightgray;
   margin: 0 0;
   padding: 15px;
   width: 100%;
   height: stretch;
+  background-color: lightgray;
 }
 .tab_button:has(:checked) + .tab_content {
   display: grid;
