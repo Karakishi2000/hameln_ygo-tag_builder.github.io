@@ -87,22 +87,28 @@ label {
   position: relative;
 }
 
-.outline_vertical {
-  width: 69%;
-  height: 4em;
-  border: 1px solid #999;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.outline_horizontal {
+.zone_row.monster .card_container::before {
+  content: "";
+  box-sizing: border-box;
   width: 4em;
   height: 69%;
   border: 1px solid #88F;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 30;
+}
+
+.card_container::after {
+  content: "";
+  box-sizing: border-box;
+  width: 69%;
+  height: 4em;
+  border: 1px solid #999;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
 }
 
 .status_label {
