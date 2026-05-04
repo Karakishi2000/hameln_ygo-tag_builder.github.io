@@ -21,8 +21,8 @@
       "preview setting";
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
-    width: 768px;
-    height: clamp(0, 100svh, 750px);
+    width: clamp(0, 100%, 800px);
+    height: clamp(0, 100lvh, 800px);
     margin: 0 auto;
   }
 }
@@ -141,7 +141,7 @@ label {
   grid-template-rows: 2em auto;
   margin: 0 0;
   padding: 0 0;
-  line-height: 190%;
+  line-height: 200%;
   width: auto;
   height: auto;
   background-color: gray;
