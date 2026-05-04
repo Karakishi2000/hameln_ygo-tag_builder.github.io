@@ -54,7 +54,7 @@ label {
   margin: 0.5em 1em;
   width: auto;
   padding: 0 0;
-  font-size: clamp(8px, 4svh, 15px);
+  font-size: clamp(8px, 4lvh, 15px);
   display: grid;
   grid-template-columns: auto ;
   grid-template-rows: repeat(5, min-content);
