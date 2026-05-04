@@ -190,10 +190,10 @@ label {
   width:calc(100% - 7em);
 }
 #name-color-hex {
-  width: 5em;
+  width: 4.5em;
 }
 #name-color-picker {
-  width: 3.5em;
+  width: 3em;
   height: 2em;
 }
 
