@@ -174,8 +174,8 @@ label {
   display: none;
   grid-template-columns: auto;
   grid-auto-column: 1fr;
-  grid-template-rows: auto;
-  grid-auto-rows: auto;
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
   margin: 0 0;
   padding: 15px;
   width: auto;
