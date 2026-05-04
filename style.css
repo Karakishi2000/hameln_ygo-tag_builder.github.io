@@ -51,14 +51,11 @@ label {
   width: stretch;
 }
 
-#preview_pane {
-  width: 100%;
-  padding: 0 0;
-  grid-area: preview;
-}
-
 #field_container {
+  grid-area: preview;
+  width: 100%;
   margin: 0.5em 1em;
+  padding: 0 0;
   font-size: clamp(8px, 4svh, 15px);
   display: grid;
   grid-template-columns: auto ;
