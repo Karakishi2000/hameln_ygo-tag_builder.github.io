@@ -194,6 +194,7 @@ label {
 }
 #name-color-picker {
   width: 3em;
+  height: 1em;
 }
 
 #atk, #def {
