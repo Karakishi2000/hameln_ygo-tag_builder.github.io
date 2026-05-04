@@ -2,16 +2,161 @@
 <html lang="jp">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-  <title>Vue test</title>
+  <title>CSS test</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="container">
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script>
-  import App from './App.vue'
-  App.mount('#app')
-</script>
-<div id="app">
+<body id="container">
+<div id="field_menu">
+<div style="display:inline">
+  <input type="checkbox" id="extra" name="extra" checked />
+  <label id="app" for="extra">EXゾーン</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="master" name="rule" value="master" checked />
+  <label for="master">マスター</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="speed" name="rule" value="speed" />
+  <label for="speed">スピード</label>
+</div>
+<div align="right"><button type="button">特殊タグをクリップボードに出力</button></div>
+</div>
+<div id="preview_pane">
+<div id="field_container">
+<div class="zone_row opponent">
+<div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
+</div>
+<div class="zone_row opponent monster">
+<div class="zone_container master"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
+<div class="zone_container master"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div></div>
+</div>
+<div class="zone_row extra monster">
+<div class="zone_spacer master"></div>
+<div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
+<div class="zone_spacer"></div>
+<div class="zone_container"><div class="status_label"></div><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
+</div>
+<div class="zone_row monster ">
+<div class="zone_container master"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
+<div class="zone_container master"><div class="card_container"><div class="outline_horizontal"></div><div class="outline_vertical"></div></div><div class="status_label"></div></div>
+</div>
+<div class="zone_row">
+<div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container"><div class="card_container"><div class="outline_vertical"></div></div></div>
+<div class="zone_container master"><div class="card_container"><div class="outline_vertical"></div></div></div>
+</div>
+</div>
+</div>
+  
+<div id="setting_pane">
+<div class="tab_button"><input type="radio" name="TAB" id="card" checked><label for="card">カード情報</label></div>
+<div class="tab_content">
+<div style="grid-column: 1 / span 2;">
+  <label for="name">カード名：</label>
+  <input type="text" id="name" name="name" style="width:calc(100% - 8em);" />
+</div>
+  
+<div>カード種別：<select name="card" id="card-select">
+  <option value="empty">-</option>
+  <option value="facedown">裏側表示</option>
+  <option value="token">トークン</option>
+  <option value="normal">通常</option>
+  <option value="effect">効果</option>
+  <option value="ritual">儀式</option>
+  <option value="fusion">融合</option>
+  <option value="syncro">シンクロ</option>
+  <option value="xyz">エクシーズ</option>
+  <option value="link">リンク</option>
+  <option value="magic">魔法</option>
+  <option value="trap">罠</option>
+</select>
+<div>
+  <input type="checkbox" id="pendulum" name="pendulum" />
+  <label for="pendulum">ペンデュラム</label>
+</div>
+<div class="status_input">
+<div style="display:inline">
+  <label for="atk">ATK/</label>
+  <input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="atk" name="atk" maxlength="6" size=5 />
+</div>
+<div style="display:inline">
+  <label for="def">DEF/</label>
+  <input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="def" name="def" maxlength="6" size=5 />
+</div>
+</div>
+<div>表示形式：
+<div style="display:inline">
+  <input type="radio" id="attack" name="position" value="attack" checked />
+  <label for="attack">縦</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="defense" name="position" value="defense" />
+  <label for="defense">横</label>
+</div>
+</div>
+<div>ｺﾝﾄﾛｰﾙ：
+<div style="display:inline">
+  <input type="radio" id="player" name="controller" value="player" checked />
+  <label for="player">自分</label>
+</div>
+<div style="display:inline">
+  <input type="radio" id="opponent" name="controller" value="opponent" />
+  <label for="opponent">相手</label>
+</div>
+</div>
+</div>
+  
+<div class="link-marker_grid">
+  <label class="link-marker"><input type="checkbox" id="top-left">◤</label>
+  <label class="link-marker" style="transform:rotate(45deg);"><input type="checkbox" id="top">◤</label>
+  <label class="link-marker"><input type="checkbox" id="top-right">◥</label>
+  <label class="link-marker" style="transform:rotate(45deg);"><input type="checkbox" id="left">◣</label>
+  <input type="checkbox" id="link-marker">
+  <label class="link-marker" style="transform:rotate(45deg);"><input type="checkbox" id="right">◥</label>
+  <label class="link-marker"><input type="checkbox" id="bottom-left">◣</label>
+  <label class="link-marker" style="transform:rotate(45deg);"><input type="checkbox" id="bottom">◢</label>
+  <label class="link-marker"><input type="checkbox" id="bottom-right">◢</label>
+</div>
+</div>
+
+<div class="tab_button"><input type="radio" name="TAB" id="design"><label for="design">デザイン設定</label></div>
+<div class="tab_content">
+<div>
+  <label for="atk">カード名文字色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="name_color" name="name_color" maxlength="6" size=5 />
+</div>
+<div>
+  <label for="atk">イラスト枠背景色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="bg_color" name="bg_color" maxlength="6" size=5 />
+</div>
+<fieldset><legend>イラスト代用テキスト</legend>
+<div>
+  <label for="atk">文字色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon_color" name="icon_color" maxlength="6" size=5 />
+</div>
+<div>
+  <label for="atk">文字背景色：#</label>
+  <input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon_bg_color" name="icon_bg_color" maxlength="6" size=5 />
+</div>
+<div>
+  <label for="atk">文字サイズ：</label>
+  <input type="text" inputmode="url" pattern="" placeholder="1" id="icon_size" name="icon_size" maxlength="6" size=5 />
+</div>
+</fieldset>
+</div>
+
 </div>
 </body>
 </html>
