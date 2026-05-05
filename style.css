@@ -59,13 +59,13 @@ label {
   font-size: clamp(8px, 4svh, 15px);
   display: grid;
   grid-template-columns: repeat(5, min-content);
-  grid-template-rows: repeat(5, minmax(1em, min-content));
+  grid-template-rows: repeat(5, minmax(2em, min-content));
   gap: 0;
 }
 
 .zone {
-  width: 4em;
-  height: minmax(1em, auto);
+  width: auto;
+  height: auto;
   margin: 0 0;
 }
 #field_menu:not(:has(#extra:checked)) + #field_preview .zone[data-row="3"] {
