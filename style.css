@@ -137,13 +137,13 @@ label {
   transform: translateX(-50%);
   z-index: 50;
 }
-.card.defense {
+.zone:is([data-row="3"], [data-row="4"]) .card.defense {
   transform: translateX(-50%) rotate(-90deg);
 }
 .zone:is([data-row="1"], [data-row="2"], [data-row="3"].opponent) .card {
   transform: translateX(-50%) rotate(180deg);
 }
-.zone:is([data-row="1"], [data-row="2"], [data-row="3"].opponent) .card.defense {
+.zone:is([data-row="2"], [data-row="3"].opponent) .card.defense {
   transform: translateX(-50%) rotate(90deg);
 }
 
