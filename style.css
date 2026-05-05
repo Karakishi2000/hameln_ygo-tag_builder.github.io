@@ -157,6 +157,17 @@ label {
   z-index: 51;
 }
 
+.card[data-card-type].pendulum::before {
+  content: "";
+  box-sizing: border-box;
+  width: 100%;
+  height: 50%;
+  background: #159280;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  z-index: 51;
+}
 .card[data-card-type]::after {
   content: "";
   box-sizing: border-box;
@@ -167,7 +178,7 @@ label {
   top: calc(100% - 1px);
   left: 50%;
   transform: translate(-50%, -100%);
-  z-index: 51;
+  z-index: 52;
 }
 
 .card[data-card-type="token"] { background: #897C74; }
@@ -179,26 +190,26 @@ label {
 .card[data-card-type="effect"] { background: #BE734A; }
 .card[data-card-type="effect"]::after { background: #E7CDB6; }
 
-.card[data-card-type="fusion"] { background: #; }
-.card[data-card-type="fusion"]::after { background: #; }
+.card[data-card-type="fusion"] { background: #95589E; }
+.card[data-card-type="fusion"]::after { background: #D6C2DC; }
 
-.card[data-card-type="ritual"] { background: #; }
-.card[data-card-type="ritual"]::after { background: #; }
+.card[data-card-type="ritual"] { background: #6684BB; }
+.card[data-card-type="ritual"]::after { background: #CED4E8; }
 
-.card[data-card-type="synchro"] { background: #; }
-.card[data-card-type="synchro"]::after { background: #; }
+.card[data-card-type="synchro"] { background: #E5E5E2; }
+.card[data-card-type="synchro"]::after { background: #ECECEC; }
 
-.card[data-card-type="xyz"] { background: #; }
-.card[data-card-type="xyz"]::after { background: #; }
+.card[data-card-type="xyz"] { background: #121314; }
+.card[data-card-type="xyz"]::after { background: #E6E6E6; }
 
-.card[data-card-type="link"] { background: #; }
-.card[data-card-type="link"]::after { background: #; }
+.card[data-card-type="link"] { background: #236EA7; }
+.card[data-card-type="link"]::after { background: #CAD6EB; }
 
-.card[data-card-type="magic"] { background: #; }
-.card[data-card-type="magic"]::after { background: #; }
+.card[data-card-type="magic"] { background: #159280; }
+.card[data-card-type="magic"]::after { background: #C8DCD8; }
 
-.card[data-card-type="trap"] { background: #; }
-.card[data-card-type="trap"]::after { background: #; }
+.card[data-card-type="trap"] { background: #B03080; }
+.card[data-card-type="trap"]::after { background: #E4C5D4; }
 
 
 
