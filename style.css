@@ -133,6 +133,8 @@ label {
   box-sizing: border-box;
   width: 69%;
   height: 100%;
+  background: #897C74;
+  border: 1px solid #4C4C64;
   position: absolute;
   top: 0%;
   left: 50%;
@@ -163,9 +165,30 @@ label {
   filter: blur(4px);
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50%;  
   transform: translate(-50%, -50%);
   z-index: 51;
+}
+
+.card:not(.facedown)::after {
+  content: "";
+  box-sizing: border-box;
+  width: calc(69% - 4px);
+  padding: 0.3em;
+  background: #D9D3CE;
+  border: 1px solid #C06838;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 51;
+}
+
+.card.normal {
+  background: #C49C58;
+}
+.card.normal::after {
+  background: #EDE0C9;
 }
 
 
