@@ -56,8 +56,8 @@ label {
   padding: 0 0;
   font-size: clamp(8px, 4svh, 15px);
   display: grid;
-  grid-template-columns: repeat(6, 4em);
-  grid-template-rows: repeat(5, min-content);
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, minmax(1em, min-content));
   gap: 0;
 }
 
@@ -75,7 +75,7 @@ label {
   position: relative;
 }
 
-.zone:is(row2, row3, row4) .card_container::before {
+.zone:is(.row2, .row3, .row4) .card_container::before {
   content: "";
   box-sizing: border-box;
   width: 4em;
@@ -160,6 +160,7 @@ label {
   height: 2em;
   border-radius: 0.5em;
   background: black;
+  filter: blur(4px);
   position: absolute;
   top: 50%;
   left: 50%;
