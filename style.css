@@ -173,12 +173,12 @@ label {
 .card:not(.facedown)::after {
   content: "";
   box-sizing: border-box;
-  width: calc(69% - 4px);
+  width: calc(100% - 2px);
   padding: 0.3em;
   background: #D9D3CE;
   border: 1px solid #C06838;
   position: absolute;
-  bottom: 2px;
+  top: calc(100% - 1px);
   left: 50%;
   transform: translate(-50%, -100%);
   z-index: 51;
