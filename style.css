@@ -3,7 +3,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-areas:
-    "field_menu"
+    "field-menu"
     "preview"
     "setting";
   grid-template-rows: auto auto 1fr;
@@ -17,7 +17,7 @@
 @media screen and (min-width: 768px) {
   #container {
     grid-template-areas:
-      "preview field_menu"
+      "preview field-menu"
       "preview setting";
     grid-template-rows: auto 1fr;
     grid-template-columns: 1fr 1fr;
@@ -39,8 +39,8 @@ label {
 
 
 
-#field_menu {
-  grid-area: field_menu;
+#field-menu {
+  grid-area: field-menu;
   box-sizing: border-box;
   margin: 0 0;
   padding: 0.5em 1em;
@@ -52,7 +52,7 @@ label {
 
 
 
-#field_preview {
+#field-preview {
   grid-area: preview;
   margin: 0.5em 1em;
   width: auto;
@@ -79,10 +79,10 @@ label {
   height: auto;
   margin: 0 0;
 }
-#field_menu:not(:has(#extra:checked)) + #field_preview .zone[data-row="3"] {
+#field-menu:not(:has(#extra:checked)) + #field-preview .zone[data-row="3"] {
   display: none;
 }
-#field_menu:has(#speed:checked) + #field_preview :is([data-column="1"], [data-column="5"]) {
+#field-menu:has(#speed:checked) + #field-preview :is([data-column="1"], [data-column="5"]) {
   display: none;
 }
 
@@ -97,14 +97,14 @@ label {
 [data-column="4"] { grid-column: 4; }
 [data-column="5"] { grid-column: 5; }
 
-.card_container {
+.card-container {
   display: block;
   width: 4em;
   height: 4em;
   margin: 0 0;
   position: relative;
 }
-.zone:is([data-row="2"], [data-row="3"], [data-row="4"]) .card_container::before {
+.zone:is([data-row="2"], [data-row="3"], [data-row="4"]) .card-container::before {
   content: "";
   box-sizing: border-box;
   width: 4em;
@@ -115,7 +115,7 @@ label {
   transform: translateY(-50%);
   z-index: 30;
 }
-.card_container::after {
+.card-container::after {
   content: "";
   box-sizing: border-box;
   width: 69%;
@@ -127,17 +127,17 @@ label {
   z-index: 40;
 }
 
-input[name="zone"]:checked + .zone .card_container{
+input[name="zone"]:checked + .zone .card-container{
   background: yellow;
 }
   
-.status_label {
+.status-label {
   display: block;
   width: 4em;
   height: 1em;
   margin: 0 0; 
 }
-.status_label > label{
+.status-label > label{
   font-size: 50%;
 }
 
@@ -240,7 +240,7 @@ input[name="zone"]:checked + .zone .card_container{
 }
 
 
-#setting_pane {
+#setting-pane {
   grid-area: setting;
   box-sizing: border-box;
   display: grid;
@@ -255,7 +255,7 @@ input[name="zone"]:checked + .zone .card_container{
   border: 1px solid black;
 }
 
-.tab_button {
+.tab-button {
   grid-row: 1;
   background-color: transparent;
   margin: 0 0;
@@ -264,19 +264,19 @@ input[name="zone"]:checked + .zone .card_container{
   clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
   text-align: center;
 }
-.tab_button:has(:checked) {
+.tab-button:has(:checked) {
   background-color: lightgray;
 }
-.tab_button input {
+.tab-button input {
   display: none;
 }
-.tab_button label  {
+.tab-button label  {
   display: inline-block;
   line-height: 2em;
   width: 100%;
 }
 
-.tab_content {
+.tab-content {
   grid-column: 1 / -1;
   display: none;
   grid-template-columns: 1fr;
@@ -289,7 +289,7 @@ input[name="zone"]:checked + .zone .card_container{
   height: auto;
   background-color: lightgray;
 }
-.tab_button:has(:checked) + .tab_content {
+.tab-button:has(:checked) + .tab-content {
   display: grid;
 }
 
@@ -307,7 +307,7 @@ input[name="zone"]:checked + .zone .card_container{
   width: 3.5em;
 }
 
-.link-marker_grid {
+.link-marker-grid {
   display: grid;
   grid-template-columns: repeat(3, 2em);
   grid-template-rows: repeat(3, 2em);
@@ -333,10 +333,10 @@ input[name="zone"]:checked + .zone .card_container{
   -webkit-text-stroke: 2px white;
 }
 
-.link-marker_grid:has(#link-marker:checked) > .link-marker {
+.link-marker-grid:has(#link-marker:checked) > .link-marker {
   opacity: 100%;
 }
-.link-marker_grid:has(#link-marker:checked) > .link-marker:has(:checked) {
+.link-marker-grid:has(#link-marker:checked) > .link-marker:has(:checked) {
   color: red;
   -webkit-text-stroke: 2px white;
 }
