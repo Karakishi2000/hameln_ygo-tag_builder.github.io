@@ -27,10 +27,6 @@
   }
 }
 
-div {
-  pointer-events: none;
-}
-
 p{
   margin: 0 0;
   padding: 0;
@@ -72,6 +68,10 @@ label {
   grid-template-columns: repeat(5, min-content);
   grid-template-rows: repeat(5, minmax(2em, min-content));
   gap: 0;
+}
+
+#field-preview div {
+  pointer-events: none;
 }
 
 .zone {
