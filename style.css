@@ -122,6 +122,10 @@ label {
   z-index: 40;
 }
 
+input[name="zone"]:checked + .zone .card_container{
+  background: yellow;
+}
+  
 .status_label {
   display: block;
   width: 4em;
