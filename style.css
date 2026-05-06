@@ -37,6 +37,10 @@ p{
   clear: both;
 }
 
+input[name="zone"] {
+  margin: 0 0;
+  pointer-events: all;
+}
 
 label {
   user-select: none;
