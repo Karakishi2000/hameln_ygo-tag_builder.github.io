@@ -40,6 +40,7 @@ p{
 input[name="zone"] {
   margin: 0 0;
   pointer-events: all;
+  opacity: 0;
 }
 
 label {
