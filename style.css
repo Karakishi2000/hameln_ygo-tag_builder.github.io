@@ -33,12 +33,6 @@ p{
   clear: both;
 }
 
-input[name="zone"] {
-  margin: 0 0;
-  pointer-events: all;
-  opacity: 0;
-}
-
 label {
   user-select: none;
 }
@@ -70,8 +64,14 @@ label {
   gap: 0;
 }
 
-#field-preview div {
+#field-preview :not(input) {
   pointer-events: none;
+}
+
+#field-preview input[name="zone"] {
+  margin: 0 0;
+  pointer-events: all;
+  opacity: 0;
 }
 
 .zone {
