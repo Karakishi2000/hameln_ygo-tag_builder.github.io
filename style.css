@@ -27,6 +27,10 @@
   }
 }
 
+div {
+  pointer-events: none;
+}
+
 p{
   margin: 0 0;
   padding: 0;
@@ -37,6 +41,8 @@ p{
 label {
   user-select: none;
 }
+
+
 
 #field_menu {
   grid-area: field_menu;
