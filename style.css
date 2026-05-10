@@ -299,6 +299,11 @@ input[name="zone"]:checked + .zone .card-container{
   height: 1.7em;
 }
 
+#icon-parameter, #pendulum-scale {
+  font-family: "Consolas", monospace;
+  width: 1em;
+}
+
 #atk, #def {
   font-family: "Consolas", monospace;
   width: 3em;
