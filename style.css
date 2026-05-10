@@ -291,15 +291,22 @@ input[name="zone"]:checked + .zone .card-container{
 }
 
 [id$="-color-hex"] {
-  width: 4.5em;
+  font-family: "Consolas", monospace;
+  width: 3.5em;
 }
 [id$="-color-picker"] {
   width: 3em;
   height: 1.7em;
 }
 
+#icon-parameter, #pendulum-scale {
+  font-family: "Consolas", monospace;
+  width: 1em;
+}
+
 #atk, #def {
-  width: 3.5em;
+  font-family: "Consolas", monospace;
+  width: 3em;
 }
 
 .link-marker-grid {
