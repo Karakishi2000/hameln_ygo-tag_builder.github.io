@@ -102,19 +102,19 @@
         <label for="bg-color-hex">ｲﾗｽﾄ背景：</label><input type="text" inputmode="url" pattern="^#([0-9a-fA-F]{3}){1,2}$" placeholder="#808080" id="bg-color-hex" maxlength="7" oninput="syncColor(event,'bg-color-picker')" /><input type="color" id="bg-color-picker" value="#808080" oninput="syncColor(event,'bg-color-hex')" />
       </div>
 	  <div>
-      <label for="icon-type">アイコン：</label><select name="icon-type" id="icon-type">
-        <option value="empty">無し</option>
-        <option value="negate">無効状態</option>
-        <option value="continuous">永続</option>
-        <option value="equip">装備</option>
-        <option value="quick">速攻</option>
-        <option value="ritual">儀式</option>
-        <option value="counter">カウンター</option>
-        <option value="level">レベル表示</option>
-        <option value="rank">ランク表示</option>
-        <option value="xyz-material">X素材表示</option>
-        <option value="custom">カスタム</option>
-      </select>
+        <label for="icon-type">ｱｲｺﾝ：</label><select name="icon-type" id="icon-type">
+          <option value="empty">無し</option>
+          <option value="negate">無効状態</option>
+          <option value="continuous">永続</option>
+          <option value="equip">装備</option>
+          <option value="quick">速攻</option>
+          <option value="ritual">儀式</option>
+          <option value="counter">カウンター</option>
+          <option value="level">レベル表示</option>
+          <option value="rank">ランク表示</option>
+          <option value="xyz-material">X素材表示</option>
+          <option value="custom">カスタム</option>
+        </select><input type="text" inputmode="numeric" placeholder="0" id="icon-parameter" size=1 />
 	  </div>
       <div class="status-input">
         <div style="display:inline-block;"><input type="radio" id="attack" name="position" value="attack" checked /><label for="attack">攻</label><input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="atk" name="atk" /></div>
@@ -130,7 +130,7 @@
         <input type="checkbox" id="pendulum" name="pendulum" /><label for="pendulum">ペンデュラム</label>
       </div>
 	  <div>
-        <label for="pendulum-scale">スケール：</label><input type="text" inputmode="url" pattern="" placeholder="1" id="pendulum-scale" name="pendulum-scale" size=2 />
+        <label for="pendulum-scale">スケール：</label><input type="text" inputmode="numeric" placeholder="0" id="pendulum-scale" size=1 />
       </div>
       <div class="link-marker-grid">
         <label class="link-marker"><input type="checkbox" id="top-left">◤</label>
