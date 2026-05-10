@@ -292,7 +292,7 @@ input[name="zone"]:checked + .zone .card-container{
 
 [id$="-color-hex"] {
   font-family: "Consolas", monospace;
-  width: 3.5em;
+  width: 4em;
 }
 [id$="-color-picker"] {
   width: 3em;
@@ -301,12 +301,12 @@ input[name="zone"]:checked + .zone .card-container{
 
 #icon-parameter, #pendulum-scale {
   font-family: "Consolas", monospace;
-  width: 1em;
+  width: 1.5em;
 }
 
 #atk, #def {
   font-family: "Consolas", monospace;
-  width: 3em;
+  width: 3.5em;
 }
 
 .link-marker-grid {
