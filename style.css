@@ -300,7 +300,6 @@ input[name="zone"]:checked + .zone .card-container{
 }
 
 #icon-parameter, #pendulum-scale {
-  font-family: "Consolas", monospace;
   width: 1.5em;
 }
 
