@@ -300,7 +300,7 @@ input[name="zone"]:checked + .zone .card-container{
 }
 
 #icon-parameter, #pendulum-scale {
-  width: 1.5em;
+  width: 1.25em;
 }
 
 #atk, #def {
