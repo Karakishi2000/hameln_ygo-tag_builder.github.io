@@ -245,7 +245,7 @@ input[name="zone"]:checked + .zone .card-container{
   grid-template-rows: 2em auto;
   margin: 0 0;
   padding: 0 0;
-  line-height: 200%;
+  line-height: 150%;
   width: auto;
   height: auto;
   background-color: gray;
@@ -300,8 +300,7 @@ input[name="zone"]:checked + .zone .card-container{
 }
 
 #icon-parameter, #pendulum-scale {
-  font-family: "Consolas", monospace;
-  width: 1.5em;
+  width: 1.25em;
 }
 
 #atk, #def {
