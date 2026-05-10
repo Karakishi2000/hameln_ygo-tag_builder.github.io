@@ -293,10 +293,10 @@ input[name="zone"]:checked + .zone .card-container{
 #name {
   width:calc(100% - 7em);
 }
-#name-color-hex {
+[id$="-color-hex"] {
   width: 4.5em;
 }
-#name-color-picker {
+[id$="-color-picker"] {
   width: 3em;
 }
 
