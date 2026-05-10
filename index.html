@@ -75,8 +75,8 @@
 <div id="setting-pane">
   <div class="tab-button"><input type="radio" name="TAB" id="card" checked><label for="card">基本設定</label></div>
   <div class="tab-content">
-    <div style="grid-column: 1 / span 2;display: flex;">
-      <label for="name">カード名：</label><input type="text" id="name" name="name" style="height:1em;flex:1;" /><input type="text" inputmode="url" pattern="^#([0-9a-fA-F]{3}){1,2}$" placeholder="#000000" id="name-color-hex" maxlength="7" oninput="syncColor(event,'name-color-picker')" /><input type="color" id="name-color-picker" oninput="syncColor(event,'name-color-hex')" />
+    <div style="grid-column: 1 / span 2; display:flex; line-height:1.5em;">
+      <label for="name">カード名：</label><input type="text" id="name" name="name" style="flex:1;" /><input type="text" inputmode="url" pattern="^#([0-9a-fA-F]{3}){1,2}$" placeholder="#000000" id="name-color-hex" maxlength="7" oninput="syncColor(event,'name-color-picker')" /><input type="color" id="name-color-picker" oninput="syncColor(event,'name-color-hex')" />
     </div>
     <div>
 	  <div>
