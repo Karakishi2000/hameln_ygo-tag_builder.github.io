@@ -305,7 +305,6 @@ input[name="zone"]:checked + .zone .card-container{
 }
 
 #atk, #def {
-  font-family: "Consolas", monospace;
   width: 3.5em;
 }
 
