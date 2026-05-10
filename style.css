@@ -298,6 +298,7 @@ input[name="zone"]:checked + .zone .card-container{
 }
 [id$="-color-picker"] {
   width: 3em;
+  height: 1.5em;
 }
 
 #atk, #def {
