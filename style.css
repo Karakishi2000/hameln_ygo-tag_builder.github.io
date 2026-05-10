@@ -292,7 +292,7 @@ input[name="zone"]:checked + .zone .card-container{
 
 [id$="-color-hex"] {
   font-family: "Consolas", monospace;
-  width: 4em;
+  width: 4.5em;
 }
 [id$="-color-picker"] {
   width: 3em;
@@ -305,7 +305,6 @@ input[name="zone"]:checked + .zone .card-container{
 }
 
 #atk, #def {
-  font-family: "Consolas", monospace;
   width: 3.5em;
 }
 
