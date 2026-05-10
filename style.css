@@ -245,7 +245,7 @@ input[name="zone"]:checked + .zone .card-container{
   grid-template-rows: 2em auto;
   margin: 0 0;
   padding: 0 0;
-  line-height: 170%;
+  line-height: 175%;
   width: auto;
   height: auto;
   background-color: gray;
@@ -298,7 +298,7 @@ input[name="zone"]:checked + .zone .card-container{
 }
 [id$="-color-picker"] {
   width: 3em;
-  height: 1.5em;
+  height: 1.75em;
 }
 
 #atk, #def {
