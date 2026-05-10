@@ -98,6 +98,9 @@
           <option value="trap">罠</option>
         </select>
 	  </div>
+      <div>
+        <label for="bg-color-hex">ｲﾗｽﾄ背景：</label><input type="text" inputmode="url" pattern="^#([0-9a-fA-F]{3}){1,2}$" placeholder="#808080" id="bg-color-hex" maxlength="7" oninput="syncColor(event,'bg-color-picker')" /><input type="color" id="bg-color-picker" value="#808080" oninput="syncColor(event,'bg-color-hex')" />
+      </div>
 	  <div>
       <label for="icon-type">アイコン：</label><select name="icon-type" id="icon-type">
         <option value="empty">無し</option>
