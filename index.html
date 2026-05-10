@@ -73,7 +73,7 @@
 </div>
   
 <div id="setting-pane">
-  <div class="tab-button"><input type="radio" name="TAB" id="card" checked><label for="card">カード情報</label></div>
+  <div class="tab-button"><input type="radio" name="TAB" id="card" checked><label for="card">基本設定</label></div>
   <div class="tab-content">
     <div style="grid-column: 1 / span 2;">
       <label for="name">カード名：</label><input type="text" id="name" name="name" />
@@ -114,14 +114,14 @@
           <option value="rank">ランク表示</option>
           <option value="xyz-material">X素材表示</option>
           <option value="custom">カスタム</option>
-        </select><input type="text" inputmode="numeric" placeholder="0" id="icon-parameter" size=1 />
+        </select>×<input type="text" inputmode="numeric" placeholder="0" id="icon-parameter" size=1 />
 	  </div>
       <div class="status-input">
         <div style="display:inline-block;"><input type="radio" id="attack" name="position" value="attack" checked /><label for="attack">攻</label><input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="atk" name="atk" /></div>
         <div style="display:inline-block;"><input type="radio" id="defense" name="position" value="defense" /><label for="defense">守</label><input type="text" inputmode="url" pattern="[0-9]*|[?∞]" placeholder="0" id="def" name="def" /></div>
       </div>
       <div>
-        <label>ｺﾝﾄﾛｰﾙ：</label><input type="radio" id="player" name="controller" value="player" checked /><label for="player">自分</label><input type="radio" id="opponent" name="controller" value="opponent" /><label for="opponent">相手</label>
+        <label>ｺﾝﾄﾛｰﾗｰ：</label><input type="radio" id="player" name="controller" value="player" checked /><label for="player">自分</label><input type="radio" id="opponent" name="controller" value="opponent" /><label for="opponent">相手</label>
       </div>
     </div>
     
@@ -146,16 +146,16 @@
     </div>
   </div>
 
-  <div class="tab-button"><input type="radio" name="TAB" id="design"><label for="design">デザイン設定</label></div>
+  <div class="tab-button"><input type="radio" name="TAB" id="design"><label for="design">カスタムアイコン</label></div>
   <div class="tab-content">
     <div>
-      <label for="atk">枠背景色：#</label><input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="bg-color" name="bg-color" maxlength="6" size=5 />
+      <label for="atk">枠背景色：</label><input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="bg-color" name="bg-color" maxlength="6" size=5 />
     </div>
     <div>
-      <label for="atk">文字色：#</label><input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon-color" name="icon-color" maxlength="6" size=5 />
+      <label for="atk">文字色：</label><input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon-color" name="icon-color" maxlength="6" size=5 />
     </div>
     <div>
-      <label for="atk">文字背景色：#</label><input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon-bg-color" name="icon-bg-color" maxlength="6" size=5 />
+      <label for="atk">文字背景色：</label><input type="text" inputmode="url" pattern="[0-9a-fA-F]{6}|[0-9a-fA-F]{3}" placeholder="000000" id="icon-bg-color" name="icon-bg-color" maxlength="6" size=5 />
     </div>
     <div>
       <label for="atk">文字サイズ：</label><input type="text" inputmode="url" pattern="" placeholder="1" id="icon-size" name="icon-size" size=5 />
